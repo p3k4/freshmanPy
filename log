@@ -42,4 +42,6 @@ while x == 1:               # Løkke som skal drive sorteringsprosessen.
               navn[t] = navn[t+1]      # Legger navn "b" til i liste-elementet "navn[t]"
               navn[t+1] = bytte      # Lar navn "b" ta plass på liste-element-plassen der navn "a" var opprinnelig.
               x = 1      # kjører denne løkka igjen.
-print("Navnene sortert etter antall bokstaver:" , navn)  # Skriver ut hele lista etter sortering.
+print("Hele lista sotert:", navn,"\n", "under er de skrevet en og en, på hver sin linje")  # Skriver ut hele lista etter sortering.
+for i in range(4):
+    print(navn[i])
