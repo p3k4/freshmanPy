@@ -28,18 +28,18 @@ print(Navnene sortert etter lengde:" , navn)      # Skriver ut hele lista
 My answer:
 # Et program for å sortere 4 navn etter lengde
 navn = []      # Definerer 'navn' som en tom liste
-x = 1            # Setter verdien til variabel "x" til 1.
-for t in range(0,4):      # Løkken skal gjentaes 4 ganger. Bruker skal altså skrive 4 navn som skal populeres i lista "navn".
+x = 1      # Sier at det skal skje en forandring -> Setter verdien til variabel "x" til 1.
+for t in range(0,4):      # Løkken skal gjentaes 4 ganger.
     svar = input("Legg til et navn: ")  # Ber bruker skrive inn et navn
-    navn.append(svar)       # Legger list-eelementet til i listen 'navn'.
-          
-while x == 1:               # Løkke som skal drive "sorteringsprosessen". Navnene skal sorteres fra "størst" til minst, basert på antall bokstaver i nanvnet.
-    for s in range(4):       # Gjentas 4 ganger, en gang for hvert liste-element i lista.
-        x = 0      # Sier at det ikke er gjort noen forandringer inne i løkken.
-        for t in range(3):      # Gjenta følgende 3 ganger:
+    navn.append(svar)       # Legger navnet til i listen 'navn'.
+
+while x == 1:               # Løkke som skal drive sorteringsprosessen.
+    for s in range(5):       # Gjentas 4 ganger, en gang for hvert navn
+        x = 0      # Sier at det ikke er gjort noen forandringer inne i løkken ennå
+        for t in range(3):      # Gjenta følgende 3 ganger: # kan også endres til 1, for å sortere "stigende"
            if len(navn[t]) < len(navn[t+1]):      # Sammenlikner liste-elementenes legnde, dersom navn "a" er mindre mindre enn navn "b"
-              bytte = navn[t]      # Legges navn "a" til i en tom variabel kalt "bytte".
-              navn[t] = navn[t+1]      # Gjør det første navnet likt som det andre (hæ?)
-              navn[t+1] = bytte      # Lar det andre navnet bli likt som det første var (hæ?)
-              x = 1      # kjører løkka en gang til.
-print("Navnene sortert etter antall bokstaver:" , navn)      # Skriver ut hele lista etter sortering.
+              bytte = navn[t]      # Legger navn "a" i en tom variabel
+              navn[t] = navn[t+1]      # Legger navn "b" til i liste-elementet "navn[t]"
+              navn[t+1] = bytte      # Lar navn "b" ta plass på liste-element-plassen der navn "a" var opprinnelig.
+              x = 1      # kjører denne løkka igjen.
+print("Navnene sortert etter antall bokstaver:" , navn)  # Skriver ut hele lista etter sortering.
