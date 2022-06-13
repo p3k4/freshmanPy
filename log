@@ -3,5 +3,43 @@
 In a few days I'll be following a Norwegian book (ISBN: 9788215034287).
 Web-resorce: https://programmering-i-skolen.github.io/programmeringiskolen/intro.html
 For now just the assignments at https://oppgaver.kidsakoder.no/python
-
 Listening to some awesome music as always - drinking cold beer and documenting my progress. Good times on a rather atypical Monday!
+
+-- log 13/06/22 17:00
+First assignment:
+Find the 5 errors: 
+# Et program for å sortere 4 navn etter lengde
+navn = []      # Definerer 'navn' som en tom liste
+x = 1      # Sier at det skal skje en forandring
+for t in range(1,5):      # Gjentar løkken 4 ganger
+    svar = input("Legg til et navn: "       # Ber om et navn
+    navn.append(svar)       Legger navnet til i listen 'navn'.
+while x == 1:      # Gjentar løkken så lenge det gjøres forandringer
+    for s in range(4):       # Gjentas 4 ganger, en gang for hvert navn
+        x = 0      # Sier at det ikke er gjort noen forandringer inne i løkken ennå
+        for t in range(3)      # Gjenta 3 ganger, for å kunne flytte lange navn oppover i lista
+           if len(navn[t]) < len(navn[t+1]):      # Flytt lange navn fremover i lista
+              bytte = navn[t]      # Legger det første navnet i en tom variabel
+              navn[t) = navn[t+1]      # Gjør det første navnet likt som det andre
+              navn[t+1] = bytte      # Lar det andre navnet bli likt som det første var
+              x = 1      # Sier at det er gjort en forandring
+print(Navnene sortert etter lengde:" , navn)      # Skriver ut hele lista
+
+My answer:
+# Et program for å sortere 4 navn etter lengde
+navn = []      # Definerer 'navn' som en tom liste
+x = 1            # Setter verdien til variabel "x" til 1.
+for t in range(0,4):      # Løkken skal gjentaes 4 ganger. Bruker skal altså skrive 4 navn som skal populeres i lista "navn".
+    svar = input("Legg til et navn: ")  # Ber bruker skrive inn et navn
+    navn.append(svar)       # Legger list-eelementet til i listen 'navn'.
+          
+while x == 1:               # Løkke som skal drive "sorteringsprosessen". Navnene skal sorteres fra "størst" til minst, basert på antall bokstaver i nanvnet.
+    for s in range(4):       # Gjentas 4 ganger, en gang for hvert liste-element i lista.
+        x = 0      # Sier at det ikke er gjort noen forandringer inne i løkken.
+        for t in range(3):      # Gjenta følgende 3 ganger:
+           if len(navn[t]) < len(navn[t+1]):      # Sammenlikner liste-elementenes legnde, dersom navn "a" er mindre mindre enn navn "b"
+              bytte = navn[t]      # Legges navn "a" til i en tom variabel kalt "bytte".
+              navn[t] = navn[t+1]      # Gjør det første navnet likt som det andre (hæ?)
+              navn[t+1] = bytte      # Lar det andre navnet bli likt som det første var (hæ?)
+              x = 1      # kjører løkka en gang til.
+print("Navnene sortert etter antall bokstaver:" , navn)      # Skriver ut hele lista etter sortering.
