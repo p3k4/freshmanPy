@@ -26,23 +26,19 @@ while x == 1:      # Gjentar løkken så lenge det gjøres forandringer
 print(Navnene sortert etter lengde:" , navn)      # Skriver ut hele lista
 
 My answer:
-                                                            # Et program for å sortere 4 navn etter lengde
-navn = []                                                   # Definerer 'navn' som en tom liste
-x = 1                                                       # Sier at det skal skje en forandring -> Setter verdien til variabel "x" til 1.
-for t in range(0,4):                                        # Løkken skal gjentaes 4 ganger.
-    svar = input("Legg til et navn: ")                      # Ber bruker skrive inn et navn
-    navn.append(svar)
-    print(t)                                                # Legger navnet til i listen 'navn'.
-
+                                                            # Et program for å sortere 5 navn etter lengde
+navn = []                                                   # Definerer 'navn' som en tom array/liste
+x = 1                                                       # Setter verdien til variabel "x" som 1.
+for t in range(0,5):                                        # Antall liste-elementer = 5
+    svar = input("Legg til et navn: ")                      # Ber bruker om input. Ett og ett navn
+    navn.append(svar)                                       # Legger navnet til i listen/array 'navn'.
 while x == 1:                                               # Løkke som skal drive sorteringsprosessen.
-    for s in range(4):                                      # Gjentas 4 ganger, en gang for hvert navn
+    for s in range(5):                                      # 
         x = 0                                               # Sier at det ikke er gjort noen forandringer inne i løkken ennå
-        for t in range(3):                                  # Gjenta følgende 3 ganger: # kan også endres til 1, for å sortere "stigende"
+        for t in range(4):                                  #
            if len(navn[t]) < len(navn[t+1]):                # Sammenlikner liste-elementenes legnde, dersom navn "a" er mindre mindre enn navn "b"
-              bytte = navn[t]                               # legges navn "a" i en tom variabel, "bytte"
-              navn[t] = navn[t+1]                           # legger navn "a" til i liste-elementet over sin forrige plassering 
-              navn[t+1] = bytte                             # lar navn "b" ta plass på liste-element-plassen der navn "a" var opprinnelig.
-              x = 1                                         # kjører denne løkka igjen.
-print("Hele lista sotert:", navn,"\nUnder er de skrevet en og en, på hver sin linje")  # Skriver ut hele lista etter sortering.
-for i in range(4):
-    print(navn[i])
+            navn[t], navn[t+1] = navn[t+1], navn[t]         # legger navn "a" til i liste-elementet til høyre for sin forrige plassering, altså en plass "frem" i lista. 
+            x = 1                                           # kjører denne løkka igjen.
+print("Hele lista sotert:", navn,"\nUnder er de skrevet en og en, på hver sin linje:")  #Skriver ut hele lista, sortert.
+for j in range(5):                                          #Skriver ut hele lista, med liste-elementene på hver linje
+    print(navn[j])
