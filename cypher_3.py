@@ -8,7 +8,6 @@ alfabet = "abcdefghijklmnopqrstuvwxyzæøå"
 def encode(bokstav, nøkkel):
     pos = alfabet.find(bokstav)
     ny_pos = (pos + nøkkel)
-    
     if ny_pos >= 29:
         ny_pos = ny_pos - 29
     return alfabet[ny_pos]
@@ -31,7 +30,7 @@ def encrypt():
             output += encode(c, nøkkel)
         else:
             output += c
-    print("\nEncryption completed!\nYour encrypted message using key",nøkkel,":", output, "\n\n")
+    print("\nEncryption completed!\nYour encrypted message using key",nøkkel,"is:", output, "\n\n")
     dostuff()
     return output
     
@@ -39,14 +38,14 @@ def encrypt():
 #oversette krypterte meldinger
 def decrypt():
     hemmelig_melding = input("What is the message you want me to decrypt?\n")
-    nøkkel = int(input("What key shall I use to decrypt the meaasage?\n"))
+    nøkkel = int(input("What key shall I use to decrypt the message?\n"))
     output = ""
     for c in hemmelig_melding:
         if c in alfabet:
             output += decode(c,nøkkel)
         else:
             output += c
-    print("\nDecryption completed!\nYour encrypted message using key",nøkkel,":", output, "\n\n")
+    print("\nDecryption completed!\nYour encrypted message using key",nøkkel,"is:", output, "\n\n")
     dostuff()
     os.system('cls||clear')
     return output
@@ -59,7 +58,9 @@ def dostuff():
     # Operasjoner bruker kan gjøre 
     kom = input("Please type a command:\n")
     if kom == "a":
+        os.system('cls||clear')
         encrypt()
     elif kom == "b":
+        os.system('cls||clear')
         decrypt()
 dostuff()
