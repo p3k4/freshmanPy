@@ -33,6 +33,7 @@ CÆÅ Åvk iv dhZÆdenXXÆg ØhkZb cÆÅ ebdÆk v dhZÆ --> Correct Key = 51
 
 
 -- log 15/06/22 15:30
+
 Wow. I got it right on first try after a nights sleep. xd
 
 qMOHPIZHQSSMHØQLHØQTHgHORfZMHTMSÆMZHNWZLQHRMOHMZHWXXØIØØHUMLHgHSWLM --> Correct Key = 37
