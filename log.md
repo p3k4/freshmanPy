@@ -20,7 +20,7 @@ encryption methods.
 
 Haha, I'm having a blast once again! A very simple and not very good-looking program, but it does the job as intended. [The Cypher-code program](https://github.com/p3k4/freshmanPy/blob/main/cypher_3.py) I made just got a tiny update, I made it easier to pick up and use. I'll add more functionallity in the next update.
 
--- log 14/06/22 03:20
+-- log 15/06/22 03:20
 
 [Kodeklubben.no task 8](https://oppgaver.kidsakoder.no/python/hemmelige_koder/hemmelige_koder)
 Message: daczj ym cgyzcdmwwzf?, key: 21. --> Sure, thanks for asking :D 
