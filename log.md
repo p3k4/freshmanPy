@@ -1,9 +1,9 @@
 -- log 13/06/22 16:30
 
 In a few days I'll be following a Norwegian book (ISBN: 9788215034287).
-Web-resorce: https://programmering-i-skolen.github.io/programmeringiskolen/intro.html
-For now just the assignments at https://oppgaver.kidsakoder.no/python
-Listening to some awesome music as always - drinking cold beer and documenting my progress. Good times on a rather atypical Monday!
+[Web-resorce](https://programmering-i-skolen.github.io/programmeringiskolen/intro.html)
+For now I'm just doing [the assignments](https://oppgaver.kidsakoder.no/python)
+Listening to some awesome music as always - drinking cold beer and documenting my progress. Good times on a rather typical Monday!
 
 -- log 13/06/22 17:00
 
