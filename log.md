@@ -30,3 +30,8 @@ Message: yvivælul ly åluulul kpul, Key: 7 --> lol, yeah ofc!
 Message: Æxø, åxz IøJJxH Ez AEwxH! --> Correct key = 19
 
 CÆÅ Åvk iv dhZÆdenXXÆg ØhkZb cÆÅ ebdÆk v dhZÆ --> Correct Key = 51
+
+
+-- log 15/06/22 15:30
+
+qMOHPIZHQSSMHØQLHØQTHgHORfZMHTMSÆMZHNWZLQHRMOHMZHWXXØIØØHUMLHgHSWLM --> Correct Key = 37
