@@ -10,16 +10,16 @@ def encode(bokstav, nøkkel):
     ny_pos = (pos + nøkkel) % l
     return alfabet[ny_pos]
 
-#funksjon for å oversette cæsar-koden
+#funksjon for å oversette fra cæsar-kode
 def decode(bokstav,nøkkel):
     pos = alfabet.find(bokstav)
-    ny_pos = (pos - nøkkel) % l #dersom ny_pos er større enn "l", blir den justert til et tall mindre enn "l"
+    ny_pos = (pos - nøkkel) % l
     return alfabet[ny_pos]
 
 #Lage krypterte meldinger
 def encrypt():
     output = ""
-    nøkkel = int(input("What key(1-9) shall I use for this message? \n"))
+    nøkkel = int(input("What key(#) shall I use for this message? \n"))
     melding_1 = input("Write the message you want me to encrypt.\n")
     for c in melding_1:
         if c in alfabet:
@@ -27,7 +27,7 @@ def encrypt():
         else:
             output += c
     print("\nEncryption completed!\nYour encrypted message using key",nøkkel,"is:", output, "\n\n")
-    dostuff()
+    dostuff() #sender bruker tilbake til "start"
     return output
     
 #Åpne krypterte meldinger
@@ -41,7 +41,7 @@ def decrypt():
         else:
             output += c
     print("\nDecryption completed!\nYour encrypted message using key",nøkkel,"is:", output, "\n\n")
-    dostuff()
+    dostuff() #sender bruker tilbake til "start"
     os.system('cls||clear')
     return output
   
