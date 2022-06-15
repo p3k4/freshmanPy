@@ -1,22 +1,19 @@
 from turtle import numinput
 import os
 #Globale variabler
-alfabet = "abcdefghijklmnopqrstuvwxyzæøå" 
+alfabet = "abcdefghijklmnopqrstuvwxyzæøåABCDEFGHIJKLMNOPQRSTUVWXYZÆØÅ"
+l = len(alfabet) 
 
 #funksjon som skal lage cæsar-kode
 def encode(bokstav, nøkkel):
     pos = alfabet.find(bokstav)
-    ny_pos = (pos + nøkkel)
-    if ny_pos >= 29:
-        ny_pos = ny_pos - 29
+    ny_pos = (pos + nøkkel) % l
     return alfabet[ny_pos]
 
 #funksjon for å oversette cæsar-koden
 def decode(bokstav,nøkkel):
     pos = alfabet.find(bokstav)
-    ny_pos = (pos - nøkkel)
-    if ny_pos < 0:
-        ny_pos = ny_pos + 29
+    ny_pos = (pos - nøkkel) % l #dersom ny_pos er større enn "l", blir den justert til et tall mindre enn "l"
     return alfabet[ny_pos]
 
 #Lage krypterte meldinger
