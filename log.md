@@ -18,7 +18,7 @@ encryption methods.
 
 -- log 14/06/22 01:30
 
-Haha, I'm having a blast once again - very simple and not very good-looking code, but it works as intended. [The Cypher-code program](https://github.com/p3k4/freshmanPy/blob/main/cypher_3.py) got a tiny update, I made it easier to pick up and use. I'll add more functionallity in the next update.
+Haha, I'm having a blast once again - very simple and not very good-looking code, but it works as intended. [The Cypher-code program](https://github.com/p3k4/freshmanPy/blob/main/cypher_3.py) I made got a tiny update, I made it easier to pick up and use. I'll add more functionallity in the next update.
 
 -- log 14/06/22 03:20
 
