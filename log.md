@@ -27,3 +27,5 @@ Message: daczj ym cgyzcdmwwzf?, key: 21. --> Sure, thanks for asking :D
 Message: yvivælul ly åluulul kpul, Key: 7 --> lol, yeah ofc!
 
 Message: Æxø, åxz IøJJxH Ez AEwxH! --> Correct key = 19
+
+CÆÅ Åvk iv dhZÆdenXXÆg ØhkZb cÆÅ ebdÆk v dhZÆ --> Correct Key = 51
