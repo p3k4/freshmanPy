@@ -37,3 +37,7 @@ CÆÅ Åvk iv dhZÆdenXXÆg ØhkZb cÆÅ ebdÆk v dhZÆ --> Correct Key = 51
 Wow. I got it right on first try after a nights sleep. xd
 
 qMOHPIZHQSSMHØQLHØQTHgHORfZMHTMSÆMZHNWZLQHRMOHMZHWXXØIØØHUMLHgHSWLM --> Correct Key = 37
+
+-- log 15/06/22 19:10
+
+Just picked up the book I was waiting for: 9788215034287. I've been afk a bit, but finished the next task I was given by [Kodeklubben](https://oppgaver.kidsakoder.no/python/hvor_gammel_er_du/hvor_gammel_er_du).
