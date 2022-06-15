@@ -1,6 +1,5 @@
 from turtle import numinput
 import os
-
 #Globale variabler
 alfabet = "abcdefghijklmnopqrstuvwxyzæøå" 
 
@@ -34,8 +33,7 @@ def encrypt():
     dostuff()
     return output
     
-    
-#oversette krypterte meldinger
+#Åpne krypterte meldinger
 def decrypt():
     hemmelig_melding = input("What is the message you want me to decrypt?\n")
     nøkkel = int(input("What key shall I use to decrypt the message?\n"))
@@ -50,17 +48,21 @@ def decrypt():
     os.system('cls||clear')
     return output
   
-#Starte programmet, bruker "clear":
-#Intro:
+#Starte programmet
 os.system('cls||clear')
 def dostuff():
     print("Welcome to C-Cypher 1.0! \nI'm a simple program that can encrypt or decrypt messages using the \"Caesar cipher\" method!", "\n\nWhat do you want me to do next? \na: Encrypt a message.\nb: Decrypt a massage.\n")
-    # Operasjoner bruker kan gjøre 
+    # Operasjoner en bruker kan gjøre 
     kom = input("Please type a command:\n")
+    # kommando a = bruker kan "lage" en melding som skal krypteres
     if kom == "a":
         os.system('cls||clear')
         encrypt()
+    # kommando b =  bruker kan "åpne" en melding som allerede er kryptert    
     elif kom == "b":
         os.system('cls||clear')
         decrypt()
+    else:
+        os.system('cls||clear')
+        dostuff()
 dostuff()
