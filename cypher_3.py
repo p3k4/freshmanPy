@@ -1,7 +1,7 @@
 from turtle import numinput
 import os
 #Globale variabler
-alfabet = "abcdefghijklmnopqrstuvwxyzæøåABCDEFGHIJKLMNOPQRSTUVWXYZÆØÅ"
+alfabet = "abcdefghijklmnopqrstuvwxyzæøåABCDEFGHIJKLMNOPQRSTUVWXYZÆØÅ "
 l = len(alfabet) 
 
 #funksjon som skal lage cæsar-kode
@@ -26,7 +26,7 @@ def encrypt():
             output += encode(c, nøkkel)
         else:
             output += c
-    print("\nEncryption completed!\nYour encrypted message using key",nøkkel,"is:", output, "\n\n")
+    print("\nEncryption completed!\nYour encrypted message using key",nøkkel,"is:", output, "\n")
     dostuff() #sender bruker tilbake til "start"
     return output
     
